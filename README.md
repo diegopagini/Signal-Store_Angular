@@ -79,3 +79,8 @@ export class OneComponent {
   <button mat-raised-button color="primary" (click)="onIncrement(3)">Increment 3</button>
 </div>
 ```
+
+
+
+![image](https://github.com/diegopagini/Signal-Store_Angular/assets/62857778/7f76c3d4-879b-4b6f-b6c2-bb6a0f40a6d9)
+
