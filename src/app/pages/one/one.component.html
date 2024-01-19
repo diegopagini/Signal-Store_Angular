@@ -1,0 +1,20 @@
+<h1>One</h1>
+
+<hr />
+
+<h2>Count: {{ counterStore.count() }}</h2>
+<h3>Interactions: {{ counterStore.interactions() }}</h3>
+
+<hr />
+
+<div>
+  <button mat-raised-button color="primary" (click)="onIncrement(1)">
+    Increment 1
+  </button>
+  <button mat-raised-button color="primary" (click)="onIncrement(2)">
+    Increment 2
+  </button>
+  <button mat-raised-button color="primary" (click)="onIncrement(3)">
+    Increment 3
+  </button>
+</div>
