@@ -4,3 +4,18 @@ div {
   gap: 1rem;
   max-width: 10rem;
 }
+
+.users {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.user {
+  img {
+    border-radius: 1rem;
+  }
+
+  text-align: center;
+}

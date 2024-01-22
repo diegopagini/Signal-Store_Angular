@@ -18,3 +18,32 @@
     Increment 3
   </button>
 </div>
+
+<hr />
+
+<button mat-raised-button color="secondary" (click)="getUsers()">
+  Get User
+</button>
+
+@if (!usersStore.loading()) {
+<!-- Not Loading -->
+@if (usersStore.users().length ) {
+<section class="users">
+  <div class="user">
+    <img
+      [src]="usersStore.users()[0].picture.medium"
+      [alt]="usersStore.users()[0].name.first"
+    />
+    <span>{{ usersStore.users()[0].name.first }}</span>
+  </div>
+</section>
+}
+
+<!-- Loading -->
+} @else {
+<section class="users">
+  <span>Loading...</span>
+</section>
+}
+
+<hr />
