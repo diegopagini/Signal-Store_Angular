@@ -12,6 +12,11 @@ export const routes: Routes = [
       import('./pages/two/two.component').then((c) => c.TwoComponent),
   },
   {
+    path: 'ssr',
+    loadComponent: () =>
+      import('./pages/ssr/ssr.component').then((c) => c.SsrComponent),
+  },
+  {
     path: '',
     redirectTo: 'one',
     pathMatch: 'full',
