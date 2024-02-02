@@ -5,10 +5,10 @@ import { lastValueFrom } from 'rxjs';
 import { User } from '../interfaces/user.interface';
 import { UsersService } from '../services/users.service';
 
-type UsersState = {
+interface UsersState {
   users: User[];
   loading: boolean;
-};
+}
 
 const initialState: UsersState = {
   users: [],

@@ -1,9 +1,9 @@
 import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
 
-type CounterState = {
+interface CounterState {
   count: number;
   interactions: number;
-};
+}
 
 const initialState: CounterState = {
   count: 0,
