@@ -1,5 +1,6 @@
 # SignalStore
 
+
 ## Store
 
 ```typescript
